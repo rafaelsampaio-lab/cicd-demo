@@ -3,10 +3,10 @@ kind: VirtualServer
 metadata:
   name: juice-shop
 spec:
-  host: CHANGE_THIS_TO_YOUR_NGINX_HOST
+  host: app-20-102-18-100.nip.io
   tls:
     secret: juice-shop-secret
-  ingressClassName: CHANGE_THIS_TO_YOUR_PREFIX-nginx-ingress  
+  ingressClassName: rsampaiobb-nginx-ingress
   upstreams:
   - name: juice-shop
     service: juice-shop-svc
@@ -14,7 +14,7 @@ spec:
   routes:
   - path: /
     action:
-      proxy: 
+      proxy:
         upstream: juice-shop
         requestHeaders:
           pass: true

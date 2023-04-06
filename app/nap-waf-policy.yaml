@@ -5,7 +5,7 @@ metadata:
 spec:
   policy:
     template:
-      name: POLICY_TEMPLATE_NGINX_BASE  
+      name: POLICY_TEMPLATE_NGINX_BASE
     applicationLanguage: utf-8
     signature-sets:
     - name: All Signatures
@@ -126,8 +126,8 @@ spec:
       maskData: true
       usSocialSecurityNumbers: true
     responsePageReference:
-      link: "https://raw.githubusercontent.com/CHANGE_THIS_TO_YOUR_REPO/cicd-demo/main/app/nap-response-page.json"
+      link: "https://raw.githubusercontent.com/rafaelsampaio-lab/cicd-demo/main/app/nap-response-page.json"
     whitelistIpReference:
-      link: "https://raw.githubusercontent.com/CHANGE_THIS_TO_YOUR_REPO/cicd-demo/main/app/nap-ip-allowlist.json"
+      link: "https://raw.githubusercontent.com/rafaelsampaio-lab/cicd-demo/main/app/nap-ip-allowlist.json"
     enforcementMode: blocking
     name: nap-waf-policy
